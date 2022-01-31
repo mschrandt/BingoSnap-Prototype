@@ -219,7 +219,7 @@
       this.jimForceVisibility();
 
       position = jQuery.extend({}, this[0].getBoundingClientRect());
-	  
+
 	  if (jimUtil.isRelative(this)) {
 		var relativeBounds = jimUtil.getRelativeItemOffset(this);
 		position.top = relativeBounds.y;
@@ -227,7 +227,7 @@
 		position.right = relativeBounds.x + relativeBounds.width;
 		position.bottom = relativeBounds.y + relativeBounds.height;
 	  }
-	  
+
       position.height= position.bottom - position.top;
       position.width= position.right - position.left;
       position.top = position.top + (scroll.top*(1/zoom)) - simulationBounds.top;
@@ -236,7 +236,7 @@
       if(!jimUtil.exists(returnBBox)  || returnBBox===false){
 		  var width = jimUtil.isRelative(this) ? position.width : this[0].offsetWidth;
 		  var height = jimUtil.isRelative(this) ? position.height : this[0].offsetHeight;
-		  
+
           position.top += (position.height - (height/(1/jimUtil.getTotalScale())))/2;
           position.left += (position.width - (width/(1/jimUtil.getTotalScale())))/2;
 		  position.height = height;
@@ -783,7 +783,7 @@
 		}
         accumulatedScrollTop = $target[0].offsetTop;
         accumulatedScrollLeft = $target[0].offsetLeft;
-		
+
 		if (jimUtil.isRelative($target)) {
 			var relativeOffset = jimUtil.getRelativeItemOffset($target);
 			accumulatedScrollTop = relativeOffset.y;
@@ -929,7 +929,7 @@
 	  	  }
 	  	  break;
 	  }
-	  
+
 	  return $realParent;
     },
     "insertInto": function(args) {
@@ -941,15 +941,15 @@
       checkIntersect = args.checkIntersect;
       event = args.event;
 	  var oldParent = $target.parent();
-	  
+
 	  dragData = $target.data("jimDrag");
       if(dragData && (!dragData.insertInto || dragData.insertInto.get(0) != $parent.get(0))){
 	  	dragData.insertInto = $parent;
       }
-	  
+
 	  var $realParent = $parent.closest(".firer");
 	  $parent = jimUtil.getParentToInsert($realParent);
-	  
+
       if(jimUtil.exists($target) && jimUtil.exists($parent)) {
         if($parent.children('#'+$target.attr("id")).length) { /*
 																 * already
@@ -988,7 +988,7 @@
                   y = position.top;
                   index = (!jimUtil.exists(position.index)) ? -1 : position.index;
                 } else {
-                  targetOffset = jimUtil.isRelative($target) ? jimUtil.getRelativeItemOffset($target) : $target.offset();  
+                  targetOffset = jimUtil.isRelative($target) ? jimUtil.getRelativeItemOffset($target) : $target.offset();
                   x = jimUtil.isRelative($target) ? targetOffset.x : targetOffset.left;
                   y = jimUtil.isRelative($target) ? targetOffset.y : targetOffset.top;
                 }
@@ -1000,13 +1000,13 @@
 				if (children.is(".verticalWrapper"))
 					children = children.children();
 				var isVertical = $insert.hasClass("vertical") || $insert.is(".horizontal.verticalWrap");
-				
+
                 children.each(function(i, child){
                   $child = jQuery(child);
 				  var boundedChild = $child;
 				  if ($child.is(".relativeLayoutWrapper"))
 					boundedChild = $child.find(".masterinstance, .group").first();
-				
+
                   if(index === i) {
                     insert = "before";
                   } else {
@@ -1014,12 +1014,12 @@
                     childOffset = isChildRelative ? jimUtil.getRelativeItemOffset(boundedChild) : boundedChild.offset();
 					var childWidth = isChildRelative ? childOffset.width : boundedChild.jimOuterWidth();
 					var childHeight = isChildRelative ? childOffset.height : boundedChild.jimOuterHeight();
-					
+
 					if (isChildRelative) {
 						childOffset.left = childOffset.x;
 						childOffset.top = childOffset.y;
 					}
-					
+
                     if (isVertical) {
                       containment = {
                         "top": childOffset.top,
@@ -1045,7 +1045,7 @@
                   return (insert === "append");
                 });
               }
-			  
+
 			  if ($target.is(".masterinstance, .group"))
 				displayType = "contents";
 
@@ -1090,11 +1090,11 @@
                 $target.appendTo($layout).css({"position": posType, "top": "0px", "left": "0px"});
               }
             }
-			
+
 			if (jimUtil.isRelative($target))
 			  $target.css("position", "");
           }
-		  
+
 		  if (jimUtil.isRelative($target) && oldParent.is(".relativeLayoutWrapperResponsive"))
 			oldParent.parent().remove();
         }
@@ -1122,7 +1122,7 @@
             "bottom": overOffset.top + $over.jimOuterHeight(),
             "right": overOffset.left + $over.jimOuterWidth()
           };
-		  
+
 		  if (jimUtil.isRelative(src)) {
 			var relativeBounds = jimUtil.getRelativeItemOffset(src);
 			target.top = relativeBounds.y;
@@ -1151,12 +1151,12 @@
             var rotationAngle = jimUtil.getAdditiveRotationDegrees($over);
             var scroll = jimUtil.getScrollPosition(), simulationBounds = jQuery("#simulation")[0].getBoundingClientRect();
             over = $over.jimPosition();
-			
+
             over.top = over.top*(jimUtil.getTotalScale()) - scroll.top + simulationBounds.top;
             over.left = over.left*(jimUtil.getTotalScale()) - scroll.left + simulationBounds.left;
             over.right = over.right*(jimUtil.getTotalScale()) - scroll.left + simulationBounds.left;
             over.bottom = over.bottom*(jimUtil.getTotalScale()) - scroll.top + simulationBounds.top;
-			
+
             /* touch events has specific x,y position for each finger* */
             if(src.originalEvent.sourceEvent.changedTouches && src.originalEvent.sourceEvent.changedTouches.length==1){
               cursorX =src.originalEvent.sourceEvent.changedTouches[0].pageX;
@@ -1199,7 +1199,7 @@
 		 * Helper function to determine whether there is an intersection between
 		 * the two polygons described by the lists of vertices. Uses the
 		 * Separating Axis Theorem
-		 * 
+		 *
 		 * @param a
 		 *            an array of connected points [{x:, y:}, {x:, y:},...] that
 		 *            form a closed polygon
@@ -1938,23 +1938,23 @@
              $columnCells = $table.find("table:first").children("tbody, thead").children("tr").children(":nth-child("+ownerIndex+")");
              $rowCells = $cell.closest("tr").children();
              var tableBorder = jimUtil.getItemBorderWidth($table);
-			 
+
 			 $cells = $innerTable.children("tbody, thead").children("tr").children(".cellcontainer, .datacell, .textcell");
              if($table.is(".datagrid") || $table.is(".datalist")) {
               	$cells = $innerTable.children("tbody, thead").children("tr").children("td");
              }
-			 
+
 			 var cellSizeMap = {};
 			 for (var i = 0; i < $cells.length; ++i) {
 				 var $currentCell = $($cells.get(i));
 				cellSizeMap[$currentCell.attr("id")] = {"width": parseInt($currentCell.css("width"),10), "height" : parseInt($currentCell.css("height"),10)};
 			 }
-			 
+
 			 var $parent = jimResponsive.getParentComponent($table);
         	 if($parent.hasClass("center"))
                $parent = $("#simulation");
         	 var parentBounds = jimResponsive.getParentBounds($table,$parent);
-			 
+
 			 var newTableWidth = $table.css("width");
 			 var newTableHeight = $table.css("height");
 
@@ -1970,7 +1970,7 @@
            	  	 else{
            	  	   $cell.css(cellProperties);
            	  	 }
-				 
+
 				 cellSizeMap[$cell.attr("id")].width = cellProperties.width;
            	  	 if($cell.data('widthUnit') !== "%")
             	   jimResponsive.setNewWidth($cell, cellProperties.width,  "px");
@@ -1991,7 +1991,7 @@
               	  	 else{
               	  	   $currentCell.css(cellProperties);
               	  	 }
-					 
+
 					 if (cellSizeMap[$currentCell.attr("id")] != undefined)
 					   cellSizeMap[$currentCell.attr("id")].width = cellProperties.width;
               	  	 if($currentCell.data('widthUnit') !== "%")
@@ -2001,14 +2001,14 @@
 
 				 if(updateTableFlag=== undefined || updateTableFlag){
 				     var tableProperties = {"width": ($table.data("widthUnit") === "%") ? (((oldTableWidth + cellDeltaWidth) / parentBounds.width) * 100) : oldTableWidth + cellDeltaWidth};
-					 
+
 					 if($table.data('widthUnit') !== "%")
                          jimResponsive.setNewWidth($table, tableProperties.width,  "px");
 				     else
 				    	 jimResponsive.setNewWidth($table, tableProperties.width, "%");
-					 
+
 					 tableProperties.width = $table.data("width") + $table.data("widthUnit");
-					 
+
 	                 if(effect){
 	                  	if(callback)
 	                  		jQuery.extend(effect, {"always": callback});
@@ -2016,7 +2016,7 @@
 	                 }
 					 else
 						 $table.css(tableProperties);
-					 
+
 					 newTableWidth = tableProperties.width;
 				 }
              }
@@ -2060,14 +2060,14 @@
 				if(!$cell.closest("tr").hasClass("hidden")){
 					if(updateTableFlag=== undefined || updateTableFlag){
 						var tableProperties = {"height": ($table.data("heightUnit") === "%") ? (((oldTableHeight + cellDeltaHeight) / parentBounds.height) * 100) : oldTableHeight + cellDeltaHeight};
-						
+
 						if($table.data('heightUnit') !== "%")
 						  jimResponsive.setNewHeight($table, tableProperties.height, "px");
 					    else
 					      jimResponsive.setNewHeight($table, tableProperties.height, "%");
-						
+
 						tableProperties.height = $table.data("height") + $table.data("heightUnit");
-						
+
 		                if(effect){
 		                  	if(callback)
 		                  		jQuery.extend(effect, {"always": callback});
@@ -2075,20 +2075,20 @@
 		                 }
 						else
 							$table.css(tableProperties);
-					     
+
 						newTableHeight = tableProperties.height;
 					}
 				}
              }
              jimUtil.adaptItemToNewSize($table);
              jimResponsive.resetOriginalTableSize($table, jimUtil.exists(newCellWidth), jimUtil.exists(newCellHeight), cellSizeMap, parseFloat(newTableWidth), parseFloat(newTableHeight));
-			 
+
 			 if (!jimUtil.exists(newCellWidth) && $table.data('widthUnit') == "%")
 				newTableWidth = $table.data('width');
-			
+
 			 if (!jimUtil.exists(newCellHeight) && $table.data('heightUnit') == "%")
 				newTableHeight = $table.data('height');
-			 
+
 			 jimUtil.resizeTable($table, parseFloat(newTableWidth), parseFloat(newTableHeight));
          }
       },
@@ -2142,18 +2142,18 @@
          var i,iLen, $cells ,$currentCell, tableWidth, tableHeight, cellWidth,cellHeight, newTableWidthNoBorders=0, newTableHeightNoBorders=0;
          if (modifyHeight == undefined)
          	modifyHeight = true;
-         	
+
          if(jimUtil.exists($table) && ($table.is(".table") || $table.is(".datalist") || $table.is(".datagrid"))){
         	  var $innerTable = $table.find("table:first");
         	  var $borderLayer = $table.children(".borderLayer");
         	  var columns = $innerTable.children("tbody, thead").children("tr:first").children("td").length;
         	  var rows = $innerTable.children("tbody, thead").children("tr").length;
-			  
+
 			  var $parent = jimResponsive.getParentComponent($table);
         	  if($parent.hasClass("center"))
             	$parent = $("#simulation");
         	  var parentBounds = jimResponsive.getParentBounds($table,$parent);
-			  
+
 			  var trueTableWidth = ($table.data("widthUnit") === "%") ? (parentBounds.width * parseFloat(newTableWidth)/100) : newTableWidth;
 			  var trueTableHeight = ($table.data("heightUnit") === "%") ? (parentBounds.height * parseFloat(newTableHeight)/100) : newTableHeight;
 
@@ -2178,11 +2178,11 @@
 
 			 var originalTableWidth = $table.data("originalWidth") - ((columns + 1) * jimEvent.fn.getCurrentStyle('padding-left', $innerTable)) - jimEvent.fn.getCurrentStyle('border-left-width', $borderLayer) - jimEvent.fn.getCurrentStyle('border-right-width', $borderLayer);
 			 var originalTableHeight = $table.data("originalHeight") - ((rows + 1) * jimEvent.fn.getCurrentStyle('padding-top', $innerTable)) - jimEvent.fn.getCurrentStyle('border-top-width', $table) - jimEvent.fn.getCurrentStyle('border-bottom-width', $table);
-			 
+
               for(i=0, iLen = $cells.length; i < iLen; i += 1) {
                 $currentCell = jQuery($cells[i])
                 var cellBorderLeftWidth = 0, cellBorderRightWidth = 0, cellBorderTopWidth = 0, cellBorderBottomWidth = 0;
-                
+
                 if($table.is(".datalist") || $table.is(".datagrid")) {
                 	var $cellBorderLayer = $currentCell.find(".borderLayer:first");
                 	var borderLeftWidth = jimEvent.fn.getCurrentStyle('border-left-width', $cellBorderLayer);
@@ -2197,7 +2197,7 @@
                 	var borderBottomWidth = jimEvent.fn.getCurrentStyle('border-bottom-width', $cellBorderLayer);
                 	cellBorderBottomWidth = isNaN(borderBottomWidth) ? 0 : borderBottomWidth;
                 }
-                
+
                 cellWidth = Math.max((($currentCell.data("originalWidth"))*newTableWidthNoBorders)/originalTableWidth ,1);
                 cellHeight = Math.max((($currentCell.data("originalHeight"))*newTableHeightNoBorders)/originalTableHeight ,1);
 
@@ -2210,10 +2210,10 @@
           			$currentCell.css(cellProperties);
 
               }
-			  
-			  
+
+
               var tableProperties = {"width": ($table.data("widthUnit") === "%") ? (newTableWidth + "%") : trueTableWidth,"height":  ($table.data("heightUnit") === "%") ?  (newTableHeight + "%") : trueTableHeight};
-			  
+
               if (!modifyHeight)
             	tableProperties = {"width": ($table.data("widthUnit") === "%") ?  (newTableWidth + "%") : trueTableWidth};
           	  if(effect){
@@ -2263,11 +2263,11 @@
 		function hex(x) {
 			return ("0" + parseInt(x).toString(16)).slice(-2);
 		}
-		
+
 		var result = { r: parseInt(rgb[1]), g : parseInt(rgb[2]), b : parseInt(rgb[3]) };
 		if (rgb[4] != undefined)
 			result.a = parseFloat(rgb[4]);
-		
+
 		return result;
 	  },
 	  "hexToRgb": function (hex) {
@@ -2371,17 +2371,7 @@
 		  return !!navigator.userAgent.match(/Trident\/7\./);
 	  },
 	  "isMobileDevice": function() {
-			var userAgent = navigator.userAgent;
-			var mobileTypes = {
-			  android: userAgent.match(/Android/),
-			  ios: userAgent.match(/(iPhone|iPad|iPod)/),
-			  windows: userAgent.match(/Windows Phone/)
-			};
-
-			if(mobileTypes.android || mobileTypes.ios || mobileTypes.windows)
-			  return true;
-			else
-			  return false;
+			return false;
 	  },
 	  "isAndroidDevice": function() {
 			return navigator.userAgent.match(/Android/);
@@ -2493,12 +2483,12 @@
 		  jQuery.each(paths, function (index, value) {
 			var path = $(value);
 		    var style = path.attr("style");
-			if (path.attr("jimofill")) 
+			if (path.attr("jimofill"))
 			  path.attr("fill", path.attr("jimofill"));
 		    if (style != undefined && style != "")
 		      path.attr("style", style.replace(/(?:fill|stroke): *(#[a-fA-F0-9]+|undefined) !important/g,""));
 		  });
-		  
+
 		  jQuery.each(obj.find("style"), function (index, value) {
 			var innerText= $(value).text();
 			$(value).html(innerText.replace(/(?:fill|stroke): *(#[a-fA-F0-9]+|undefined) !important/g,""));
@@ -2549,7 +2539,7 @@
 		"getItemMarginWidth" : function ($item) {
 		  var left, top, bottom, right;
 		  left = top = bottom = right = 0;
-		  
+
 		  var $borderLayer = $item;
 		  if($borderLayer) {
 		  	top = parseInt($borderLayer.css("border-top-width"));
@@ -2662,11 +2652,11 @@
 		"doBorderUpdate" : function($item) {
 			var newBorder = jimUtil.getItemBorderWidth($item);
 			jimUtil.doBorderRadiusUpdate($item);
-			
-			
-			
-			
-			
+
+
+
+
+
 			// var trueHeight = $item.height() - oldBorder.top - oldBorder.bottom + newBorder.top + newBorder.bottom;
 
       /* if($item.hasClass("autofit")){
@@ -2729,31 +2719,31 @@
 		},
 		"getTransformTranslate" : function(elem) {
 			var transform = elem.css("transform");
-			
+
 			if (transform == "none")
 				return undefined;
-			
+
 			var values = transform.split('(')[1].split(')')[0].split(',');
-			
+
 			return {x : values[4], y : values[5]};
 		},
 		"setMasterPinTransforms" : function() {
 		  $(".masterinstance .pin").each(function (index, item) {
 			var pinnedItem = $(item);
-			var transform = pinnedItem.css("transform");			
+			var transform = pinnedItem.css("transform");
 			if (transform == "none")
 				return;
-			
-			var translate = jimUtil.getTransformTranslate(pinnedItem);			
+
+			var translate = jimUtil.getTransformTranslate(pinnedItem);
 			var angle = parseInt(jimUtil.getRotationDegrees(pinnedItem));
-			
+
 			if (jimPin.getHorizontalPin(pinnedItem) != "none")
 				translate.x = (jimPin.getHorizontalPin(pinnedItem) == "center") ? "-50%" : "0px";
 			else translate.x = translate.x + "px";
 			if (jimPin.getVerticalPin(pinnedItem) != "none")
 				translate.y = (jimPin.getVerticalPin(pinnedItem) == "center") ? "-50%" : "0px";
 			else translate.y = translate.y + "px";
-			
+
 			pinnedItem.css("transform", "translate(" + translate.x + ", " + translate.y + ")  rotate(" + angle + "deg)");
 		  });
 		},
@@ -2793,20 +2783,20 @@
 		"rotateRelativeItemChilds" : function(item, angle, center, totalAngle) {
 			var childs = [];
 			var children = item.children();
-			
+
 			if (item.is(".masterinstance")) {
 				var dataX = parseFloat(item.attr("dataX"));
 				var dataY = parseFloat(item.attr("dataY"));
 				center.x = center.x - dataX;
 				center.y = center.y - dataY;
 			}
-			
+
 			for (var i = 0; i < children.length; ++i) {
 				var $child = $(children[i]);
-				
+
 				if ($child.is("link"))
 					continue;
-				
+
 				if ($child.is(".masterinstance, .group"))
 					jimUtil.rotateRelativeItemChilds($child, angle, center, totalAngle);
 				else {
@@ -2819,23 +2809,23 @@
 						right: position.left + $child[0].clientWidth,
 						bottom: position.top + $child[0].clientHeight
 					};
-					
+
 					var oldTranslate = jimUtil.getTransformTranslate($child);
 					var tx = (oldTranslate) ? parseFloat(oldTranslate.x) : 0;
 					var ty = (oldTranslate) ? parseFloat(oldTranslate.y) : 0;
-					
-					var properties = {};					
-					
+
+					var properties = {};
+
 					var childPivot = {x : center.x - (childBounds.left + childBounds.width/2), y : center.y - (childBounds.top + childBounds.height/2)};
-					$child.css({"transform" :  
+					$child.css({"transform" :
 						"translate(" + childPivot.x + "px," + childPivot.y + "px) " +
-						"rotate(" + angle + "deg) " + 
+						"rotate(" + angle + "deg) " +
 						"translate(" + -childPivot.x + "px," + -childPivot.y + "px)"});
-					
+
 					var translate = jimUtil.getTransformTranslate($child);
 					var x = parseFloat(translate.x) + parseFloat($child.css("left"));
 					var y = parseFloat(translate.y) + parseFloat($child.css("top"));
-					
+
 					var hpin = jimPin.getHorizontalPin($child);
 					if (hpin == "center")
 						tx = "-50%";
@@ -2843,7 +2833,7 @@
 						jQuery.extend(properties, {"left" : x + "px"});
 						tx = tx + "px";
 					} else tx = 0;
-					
+
 					var vpin = jimPin.getVerticalPin($child);
 					if (vpin == "center")
 						ty = "-50%";
@@ -2851,7 +2841,7 @@
 						jQuery.extend(properties, {"top" : y + "px"});
 						ty = ty + "px";
 					} else ty = 0;
-					
+
 					jQuery.extend(properties, {"transform" : "translate(" + tx + ", " + ty + ") rotate(" + totalAngle + "deg)"});
 					$child[0]["rotationdeg"] = totalAngle;
 					$child.css(properties);
@@ -2864,26 +2854,26 @@
 
 			for (var i = 0; i < children.length; ++i) {
 				var $child = $(children[i]);
-				
+
 				if ($child.is("link"))
 					continue;
-				
+
 				if ($child.is(".masterinstance, .group"))
 					jimUtil.moveRelativeItemChilds($child, offset, effects);
 				else {
 					var x = parseFloat($child.css("left"));
 					var y = parseFloat($child.css("top"));
-					
+
 					if (isNaN(x))
 						x = 0;
 					if (isNaN(y))
 						y = 0;
-					
+
 					properties = {};
 					var hpin = jimPin.getHorizontalPin($child);
 					if (hpin == "none")
 						jQuery.extend(properties, {"left" : (x + offset.x) + "px"});
-					
+
 					var vpin = jimPin.getVerticalPin($child);
 					if (vpin == "none")
 						jQuery.extend(properties, {"top" : (y + offset.y) + "px"});
@@ -2899,16 +2889,16 @@
 			var minx, maxx, miny, maxy;
 			minx = miny = Number.MAX_VALUE;
 			maxx = maxy = Number.MIN_SAFE_INTEGER;
-			
+
 			var children = item.children();
 			for (var i = 0; i < children.length; ++i) {
 				var childBounds;
 				var child = children[i];
 				var $child = $(child);
-				
+
 				if ($child.is("link, .hidden, .highlightEffect") || $child.css("display") == "none")
 					continue;
-							
+
 				if ($child.is(".masterinstance, .group"))
 					childBounds = jimUtil.getRelativeItemBounds($child);
 				else {
@@ -2916,20 +2906,20 @@
 					if (parentBounds && $child.is(".percentage")) {
 						var cWidth = $child.data('width');
 						var cHeight = $child.data('height');
-						
+
 						if ($child.data('widthUnit') === "%") {
 							var percWidth = parentBounds.width * parseFloat(cWidth)/100;
 							currentWidth = cWidth;
-                            $child.css("width", percWidth + "px");   
+                            $child.css("width", percWidth + "px");
                         }
-						
+
 						if ($child.data('heightUnit') === "%") {
 							var percHeight = parentBounds.height * parseFloat(cHeight)/100;
 							currentHeight = cHeight;
                             $child.css("height", percHeight + "px");
                         }
 					}
-					
+
 					var x = parseFloat($child.css("left"));
 					var y = parseFloat($child.css("top"));
                     var bounds = child.getBoundingClientRect();
@@ -2939,18 +2929,18 @@
 						width : bounds.right - bounds.left + parseFloat($child.css("margin-left")) + parseFloat($child.css("margin-right")),
 						height : bounds.bottom - bounds.top + parseFloat($child.css("margin-top")) + parseFloat($child.css("margin-bottom"))
 					};
-					
+
 					if (jimUtil.getRotationDegrees($child) != 0) {
 						var width = parseFloat($child.css("width")) + parseFloat($child.css("margin-left")) + parseFloat($child.css("margin-right"));
 						var height = parseFloat($child.css("height")) + parseFloat($child.css("margin-top")) + parseFloat($child.css("margin-bottom"));
-						
+
 						var rectangle = jimUtil.getRotatedRectangle(childBounds.x, childBounds.y, width, height, jimUtil.getRotationDegrees($child)).points;
-						
+
 						var minX = Math.min(rectangle[0].x, Math.min(rectangle[1].x, Math.min(rectangle[2].x, rectangle[3].x)));
 						var minY = Math.min(rectangle[0].y, Math.min(rectangle[1].y, Math.min(rectangle[2].y, rectangle[3].y)));
 						var maxX = Math.max(rectangle[0].x, Math.max(rectangle[1].x, Math.max(rectangle[2].x, rectangle[3].x)));
 						var maxY = Math.max(rectangle[0].y, Math.max(rectangle[1].y, Math.max(rectangle[2].y, rectangle[3].y)));
-						
+
 						childBounds = {
 							x : minX,
 							y : minY,
@@ -2962,18 +2952,18 @@
 					if(currentWidth != null)
 						$child.css("width", currentWidth + "%");
 					if(currentHeight != null)
-						$child.css("height", currentHeight + "%"); 
+						$child.css("height", currentHeight + "%");
 				}
-				
+
 				minx = Math.min(childBounds.x, minx);
 				miny = Math.min(childBounds.y, miny);
 				maxx = Math.max(childBounds.x + childBounds.width, maxx);
 				maxy = Math.max(childBounds.y + childBounds.height, maxy);
 			}
-			
+
 			if (minx == Number.MAX_VALUE)
 				minx = miny = maxx = maxy = 0;
-			
+
 			if (item.is(".masterinstance")) {
 				var masterL = parseFloat(item.attr("dataX"));
 				var masterT = parseFloat(item.attr("dataY"));
@@ -2982,23 +2972,23 @@
 				miny += masterT;
 				maxy += masterT;
 			}
-				
+
 			return {x : minx, y : miny, width : maxx - minx, height : maxy - miny};
 		},
 		"getRelativeItemOffset" : function (item, parentBounds) {
 			var minx, maxx, miny, maxy;
 			minx = miny = Number.MAX_VALUE;
 			maxx = maxy = Number.MIN_VALUE;
-			
+
 			var children = item.children();
 			for (var i = 0; i < children.length; ++i) {
 				var childBounds;
 				var child = children[i];
 				var $child = $(child);
-				
+
 				if ($child.is("link, .hidden, .highlightEffect") || $child.css("display") == "none")
 					continue;
-							
+
 				if ($child.is(".masterinstance, .group"))
 					childBounds = jimUtil.getRelativeItemOffset($child);
 				else {
@@ -3006,20 +2996,20 @@
 					if (parentBounds && $child.is(".percentage")) {
 						var cWidth = $child.data('width');
 						var cHeight = $child.data('height');
-						
+
 						if ($child.data('widthUnit') === "%") {
 							var percWidth = parentBounds.width * parseFloat(cWidth)/100;
 							currentWidth = cWidth;
-                            $child.css("width", percWidth + "px");   
+                            $child.css("width", percWidth + "px");
                         }
-						
+
 						if ($child.data('heightUnit') === "%") {
 							var percHeight = parentBounds.height * parseFloat(cHeight)/100;
 							currentHeight = cHeight;
                             $child.css("height", percHeight + "px");
                         }
 					}
-					
+
 					var bounds = child.getBoundingClientRect();
 					childBounds = {
 						x : bounds.left,
@@ -3027,22 +3017,22 @@
 						width : bounds.right - bounds.left,
 						height : bounds.bottom - bounds.top
 					};
-					
+
 					if(currentWidth != null)
 						$child.css("width", currentWidth + "%");
 					if(currentHeight != null)
-						$child.css("height", currentHeight + "%"); 
+						$child.css("height", currentHeight + "%");
 				}
-				
+
 				minx = Math.min(childBounds.x, minx);
 				miny = Math.min(childBounds.y, miny);
 				maxx = Math.max(childBounds.x + childBounds.width, maxx);
 				maxy = Math.max(childBounds.y + childBounds.height, maxy);
 			}
-			
+
 			if (minx == Number.MAX_VALUE)
 				minx = miny = maxx = maxy = 0;
-			
+
 			return {x : minx, y : miny, width : maxx - minx, height : maxy - miny};
 		},
 		"isRelative" : function(item) {
@@ -3061,7 +3051,7 @@
 				$wrapper.css("transform", "translate(" + -bounds.x + "px, " + -bounds.y + "px)");
 				$wrapper.css("width", bounds.width + "px");
 				$wrapper.css("height", bounds.height + "px");
-				
+
 				if ($item.is(".hidden"))
 					$wrapper.addClass("hidden");
 			}
@@ -3069,7 +3059,7 @@
 		"refreshEventResponsiveLayoutItem" : function($target) {
 			var id = $target.attr("id");
 			if (($target.is(".relativeLayoutWrapperResponsive > .masterinstance #" + id) &&
-				  !$target.is(".masterinstance .scrollable #" + id)) || 
+				  !$target.is(".masterinstance .scrollable #" + id)) ||
 				  ($target.is(".relativeLayoutWrapperResponsive > .group #" + id) &&
 				  !$target.is(".group .scrollable #" + id)) ||
 				  ($target.is(".relativeLayoutWrapperResponsive > #" + id + ".group, .relativeLayoutWrapperResponsive > #" + id + ".masterinstance"))) {
@@ -3077,12 +3067,12 @@
 				var wrapper = $target.closest(".relativeLayoutWrapper");
 				jimResponsive.refreshResponsiveRelativeItem(wrapper.children().children().first());
 				$target.jimUndoVisibility();
-			}					  
+			}
 		},
 		"refreshResponsiveLayoutItem" : function($target) {
 			var id = $target.attr("id");
 			if (($target.is(".relativeLayoutWrapperResponsive > .masterinstance #" + id) &&
-				  !$target.is(".masterinstance .scrollable #" + id)) || 
+				  !$target.is(".masterinstance .scrollable #" + id)) ||
 				  ($target.is(".relativeLayoutWrapperResponsive > .group #" + id) &&
 				  !$target.is(".group .scrollable #" + id)) ||
 				  ($target.is(".relativeLayoutWrapperResponsive > #" + id + ".group, .relativeLayoutWrapperResponsive > #" + id + ".masterinstance"))) {
@@ -3106,13 +3096,13 @@
 					else if(cssAttrName==="border-left-color")
 						$target.css("border-left-style","solid");
 				});
-			
+
 			}
 		},
 		"borderColorChangedUndo" : function ($target, cssAttrName, undoAttrArray){
 			if(cssAttrName==="border-top-color")
 				undoAttrArray["border-top-style"] = $target.css("border-top-style");
-			else if(cssAttrName==="border-right-color")	
+			else if(cssAttrName==="border-right-color")
 				undoAttrArray["border-right-style"] = $target.css("border-right-style");
 			else if(cssAttrName==="border-bottom-color")
 				undoAttrArray["border-bottom-style"] = $target.css("border-bottom-style");
@@ -3138,7 +3128,7 @@
 				  var linearGradients = oldBackgroundImage.match(/(?:radial|linear)-gradient\([#a-zA-Z0-9, ()]+\)/);
 				  var newArray = newBackgroundImage;
 
-				  if (linearGradients != null) 
+				  if (linearGradients != null)
 				    for (var i = 0; i < linearGradients.length; ++i)
 					  newArray = newBackgroundImage + ", " + linearGradients[i];
 
@@ -3154,7 +3144,7 @@
 					var width = panel.data("width");
 					if(width!==undefined) {
 						var parent = panel.parent();
-					
+
 						if (!(parent.css("position") == "fixed"))
 							parent.css("width", width + "%");
 						panel.css("width", "100%")
@@ -3164,7 +3154,7 @@
 					var height = panel.data("height");
 					if(height!==undefined) {
 						var parent = panel.parent();
-						
+
 						if (!(parent.css("position") == "fixed"))
 							parent.css("height", height + "%");
 						panel.css("height", "100%")
@@ -3200,53 +3190,53 @@
 		"translateJimGradientToCSS" : function (gradientText, width, height) {
 			if (gradientText.indexOf("linear-gradient") >= 0) {
 				var startEndRegexp = /[0-9\.]+% [0-9\.]+% to [0-9\.]+% [0-9\.]+%/mg;
-				
+
 				if (gradientText.match(startEndRegexp) == null || !gradientText.match(startEndRegexp).length)
 					return gradientText;
-				
+
 				var pointMatches = gradientText.match(startEndRegexp)[0].match(/([0-9\.]+)%/mg);
-				
+
 				var start = {x : parseFloat(pointMatches[0]) / 100, y : parseFloat(pointMatches[1]) / 100};
 				var end = {x : parseFloat(pointMatches[2]) / 100, y : parseFloat(pointMatches[3]) / 100};
-				
+
 				var gradientVector = {x : (end.x - start.x) * width, y : (end.y - start.y) * height};
 				var localStart = {x : start.x * width, y: start.y * height};
-				
+
 				var angle = Math.atan2(gradientVector.x, gradientVector.y * -1);
 				var cssGradientLength = Math.abs(width * Math.sin(angle)) + Math.abs(height * Math.cos(angle));
-				
+
 				var gradientVectorNorm = Math.sqrt(gradientVector.x * gradientVector.x + gradientVector.y * gradientVector.y);
 				var gradientVectorUnitary = {x: gradientVector.x / gradientVectorNorm, y: gradientVector.y / gradientVectorNorm};
 				var cssStart = {x: width / 2 + gradientVectorUnitary.x * (-1) * (cssGradientLength / 2), y: height / 2 + gradientVectorUnitary.y * (-1) * (cssGradientLength / 2)};
-				
+
 				var gradientStopStart = jimUtil.getClosestPointOnLine(gradientVector, {x : width / 2, y : height / 2}, localStart);
-				
+
 				// ANGLE
 				gradientText = gradientText.replace(startEndRegexp, (angle * 180.0 / Math.PI) + "deg");
-				
+
 				// STOPS
 				var stopRegexp = /(?:#[a-fA-F0-9]+|rgba{0,1} *\((?: *[0-9.]+ *,*)+\)) [0-9\.]+%/g;
-				
+
 				gradientText = gradientText.replace(stopRegexp, function (stop) {
 					var offset = parseFloat(stop.match(/[0-9\.]+%/)[0]) / 100;
-					
+
 					var stopPositionX = gradientStopStart.x + (gradientVectorUnitary.x * gradientVectorNorm * offset);
 					var stopPositionY = gradientStopStart.y + (gradientVectorUnitary.y * gradientVectorNorm * offset);
 					var toStart = {x : stopPositionX - cssStart.x, y : stopPositionY - cssStart.y};
 					var distanceToStart = Math.sqrt(toStart.x * toStart.x + toStart.y * toStart.y);
-					
+
 					var cssOffset = distanceToStart / cssGradientLength;
-					
+
 					var toStartAngle = Math.atan2(toStart.x * -1, toStart.y);
 					if (Math.abs((toStartAngle - angle) * (180.0 / Math.PI)) < 2)
 						cssOffset *= -1;
-					
+
 					return stop.replace(/[0-9\.]+%/, (cssOffset * 100) + "%");
 				});
 			} else if (gradientText.indexOf("radial-gradient") >= 0) {
 				var radiusRegexp = /[0-9\.]+% [0-9\.]+% at/mg;
 				var radiusMatches = gradientText.match(radiusRegexp)[0].match(/([0-9\.]+)%/mg);
-				
+
 				if (width > height) {
 					var widthRadius = parseFloat(radiusMatches[0]) * height/width;
 					gradientText = gradientText.replace(radiusMatches[0], widthRadius + "%");
@@ -3256,7 +3246,7 @@
 					gradientText = gradientText.replace(/([0-9\.]+%) ([0-9\.]+%) at/, "$1 " + heightRadius + "%" + " at");
 				}
 			}
-			
+
 			return gradientText;
 		}
     };
