@@ -2,9 +2,9 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="t-f39803f7-df02-4169-93eb-7547fb8c961a" class="template growth-both devMobile canvas firer commentable non-processed" alignment="left" name="Template 1" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643673210017.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643673210017-ie.css" /><![endif]-->\
-      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643673210017-ie8.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643745066552.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643745066552-ie.css" /><![endif]-->\
+      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643745066552-ie8.css" /><![endif]-->\
       <div class="freeLayout">\
       </div>\
 \
@@ -15,9 +15,9 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="s-ea38e0ec-d2de-4d46-b30c-8cdd86838a52" class="screen growth-vertical devMobile canvas PORTRAIT firer ie-background commentable non-processed" alignment="left" name="Bingo" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/screens/ea38e0ec-d2de-4d46-b30c-8cdd86838a52-1643673210017.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/ea38e0ec-d2de-4d46-b30c-8cdd86838a52-1643673210017-ie.css" /><![endif]-->\
-      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/ea38e0ec-d2de-4d46-b30c-8cdd86838a52-1643673210017-ie8.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/screens/ea38e0ec-d2de-4d46-b30c-8cdd86838a52-1643745066552.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/ea38e0ec-d2de-4d46-b30c-8cdd86838a52-1643745066552-ie.css" /><![endif]-->\
+      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/ea38e0ec-d2de-4d46-b30c-8cdd86838a52-1643745066552-ie8.css" /><![endif]-->\
       <div class="freeLayout">\
       <div id="s-Table_1" class="pie table firer commentable non-processed" customid="Table 1"  datasizewidth="360.0px" datasizeheight="380.0px" dataX="0.0" dataY="260.0" originalwidth="358.99999999999994px" originalheight="378.96215409665456px" >\
         <div class="backgroundLayer">\

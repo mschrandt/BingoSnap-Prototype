@@ -1,0 +1,252 @@
+#s-b092a611-d212-4a78-8de4-687084e41f08 > #backgroundBox {
+  background-color: #000000;
+  position: absolute;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 > #alignmentBox {
+  position: relative;
+  max-width: 360.0px;
+  max-height: 640.0px;
+  width: 100%;
+  height: 100%;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Image {
+  position: absolute;
+  width: 722.9999999999995px;
+  height: 542.2499999999995px;
+  -webkit-transform: rotate(0.0deg);
+  -moz-transform: rotate(0.0deg);
+  transform: rotate(0.0deg);
+  filter: none;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+}
+
+_:-ms-fullscreen, :root #s-b092a611-d212-4a78-8de4-687084e41f08 #s-Image {
+  box-shadow: none;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle {
+  position: absolute;
+  width: 281.00000000000006px;
+  min-height: 108.00000000000006px;
+  -webkit-transform: rotate(0.0deg);
+  -moz-transform: rotate(0.0deg);
+  transform: rotate(0.0deg);
+  filter: none;
+  text-shadow: none;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  font-size: 0pt;
+  font-family: 'Arial',Arial;
+}
+
+_:-ms-fullscreen, :root #s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle {
+  box-shadow: none;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle > .borderLayer {
+  border-top-width: 3.0px;
+  border-top-style: solid;
+  border-top-color: #FFFFFF;
+  border-right-width: 3.0px;
+  border-right-style: solid;
+  border-right-color: #FFFFFF;
+  border-bottom-width: 3.0px;
+  border-bottom-style: solid;
+  border-bottom-color: #FFFFFF;
+  border-left-width: 3.0px;
+  border-left-style: solid;
+  border-left-color: #FFFFFF;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle .paddingLayer:first-child {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle .valign {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle span {
+  color: #333333;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Arial',Arial;
+  font-size: 10.0pt;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle span#rtr-s-Rectangle_0 {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Arial',Arial;
+  font-size: 10.0pt;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 {
+  position: absolute;
+  width: 96.111115%;
+  min-height: 48.0px;
+  -webkit-transform: rotate(0.0deg);
+  -moz-transform: rotate(0.0deg);
+  transform: rotate(0.0deg);
+  filter: none;
+  text-shadow: none;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  font-size: 0pt;
+  font-family: 'Arial',Arial;
+}
+
+_:-ms-fullscreen, :root #s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 {
+  box-shadow: none;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 > .backgroundLayer {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 > .backgroundLayer > .colorLayer {
+  background-color: #434343;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 > .borderLayer {
+  border-top-width: 0.0px;
+  border-top-style: solid;
+  border-top-color: #404040;
+  border-right-width: 0.0px;
+  border-right-style: solid;
+  border-right-color: #404040;
+  border-bottom-width: 0.0px;
+  border-bottom-style: solid;
+  border-bottom-color: #404040;
+  border-left-width: 0.0px;
+  border-left-style: solid;
+  border-left-color: #404040;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 > .backgroundLayer {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 .paddingLayer:first-child {
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 .valign {
+  vertical-align: middle;
+  text-align: left;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 span {
+  color: #D9D9D9;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Arial',Arial;
+  font-size: 11.0pt;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Rectangle_2 span#rtr-s-Rectangle_2_0 {
+  color: #D9D9D9;
+  text-decoration: none;
+  font-family: 'Arial',Arial;
+  font-size: 11.0pt;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Button_11 {
+  position: absolute;
+  width: 80.0px;
+  min-height: 29.0px;
+  -webkit-transform: rotate(0.0deg);
+  -moz-transform: rotate(0.0deg);
+  transform: rotate(0.0deg);
+  filter: none;
+  text-shadow: none;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  font-size: 0pt;
+  font-family: 'Roboto-Medium',Arial;
+}
+
+_:-ms-fullscreen, :root #s-b092a611-d212-4a78-8de4-687084e41f08 #s-Button_11 {
+  box-shadow: none;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Button_11 .paddingLayer:first-child {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Button_11 .valign {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Button_11 span {
+  color: #B68AF7;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto-Medium',Arial;
+  font-size: 11.0pt;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 #s-Button_11 span#rtr-s-Button_11_0 {
+  color: #B68AF7;
+  text-decoration: none;
+  font-family: 'Roboto-Medium',Arial;
+  font-size: 11.0pt;
+}
+
+.devMobile #jim-container .ui-page {
+  overflow-x: hidden;
+}
+
+.non_jim_mobile #simulation {
+  overflow-x: hidden;
+}
+
+.web #simulation {
+  overflow-x: hidden;
+}
+
+#s-b092a611-d212-4a78-8de4-687084e41f08 > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}

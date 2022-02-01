@@ -2,8 +2,8 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="t-f39803f7-df02-4169-93eb-7547fb8c961a" class="template growth-both devMobile canvas firer commentable non-processed" alignment="left" name="Template 1" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643673210017.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643673210017-ie.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251-ie.css" /><![endif]-->\
       <!--[if lte IE 8]><![endif]-->\
       <div class="freeLayout">\
       </div>\
@@ -15,18 +15,10 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="s-02a34af0-abbb-4f35-99fd-1fd3cb4b58f8" class="screen growth-vertical devMobile canvas PORTRAIT firer ie-background commentable non-processed" alignment="left" name="Review Image" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/screens/02a34af0-abbb-4f35-99fd-1fd3cb4b58f8-1643673210017.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/02a34af0-abbb-4f35-99fd-1fd3cb4b58f8-1643673210017-ie.css" /><![endif]-->\
-      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/02a34af0-abbb-4f35-99fd-1fd3cb4b58f8-1643673210017-ie8.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/screens/02a34af0-abbb-4f35-99fd-1fd3cb4b58f8-1643748110251.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/02a34af0-abbb-4f35-99fd-1fd3cb4b58f8-1643748110251-ie.css" /><![endif]-->\
+      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/02a34af0-abbb-4f35-99fd-1fd3cb4b58f8-1643748110251-ie8.css" /><![endif]-->\
       <div class="freeLayout">\
-      <div id="s-Image" class="pie image lockV firer ie-background commentable non-processed" customid="Image"   datasizewidth="488.0px" datasizeheight="448.0px" dataX="-128.0" dataY="-0.4" aspectRatio="0.918"   alt="image">\
-        <div class="borderLayer">\
-        	<div class="imageViewport">\
-        		<img src="./images/9914f6e2-74a0-4344-a484-09b37ecebfcd.jpg" />\
-        	</div>\
-        </div>\
-      </div>\
-\
       <div id="s-Button_2" class="pie button multiline manualfit firer click commentable non-processed" customid="Submit for Review"   datasizewidth="360.0px" datasizeheight="64.1px" dataX="-0.0" dataY="575.9" >\
         <div class="backgroundLayer">\
           <div class="colorLayer"></div>\
@@ -42,7 +34,7 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
           </div>\
         </div>\
       </div>\
-      <div id="s-Button_3" class="pie button multiline manualfit firer commentable non-processed" customid="Retake Image"   datasizewidth="360.0px" datasizeheight="64.1px" dataX="-0.0" dataY="511.7" >\
+      <div id="s-Button_3" class="pie button multiline manualfit firer click commentable non-processed" customid="Retake Image"   datasizewidth="360.0px" datasizeheight="64.1px" dataX="-0.0" dataY="511.7" >\
         <div class="backgroundLayer">\
           <div class="colorLayer"></div>\
           <div class="imageLayer"></div>\
@@ -57,7 +49,7 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
           </div>\
         </div>\
       </div>\
-      <div id="s-Button_4" class="pie button multiline manualfit firer commentable non-processed" customid="Adjust Crop"   datasizewidth="360.0px" datasizeheight="64.1px" dataX="-0.0" dataY="447.6" >\
+      <div id="s-Button_4" class="pie button multiline manualfit firer click commentable non-processed" customid="Adjust Crop"   datasizewidth="360.0px" datasizeheight="64.1px" dataX="-0.0" dataY="447.6" >\
         <div class="backgroundLayer">\
           <div class="colorLayer"></div>\
           <div class="imageLayer"></div>\
@@ -102,6 +94,15 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
           </div>\
         </div>\
       </div>\
+\
+      <div id="s-Image" class="pie image lockV firer ie-background commentable non-processed" customid="Image"   datasizewidth="596.7px" datasizeheight="447.5px" dataX="-135.0" dataY="-0.4" aspectRatio="0.75"   alt="image">\
+        <div class="borderLayer">\
+        	<div class="imageViewport">\
+        		<img src="./images/bd9a3ebc-d9dd-47c0-b350-7bab5d340f70.jpg" />\
+        	</div>\
+        </div>\
+      </div>\
+\
 \
       <div id="s-Image_56" class="pie image firer ie-background commentable non-processed" customid="Image_56"   datasizewidth="35.5px" datasizeheight="35.2px" dataX="324.5" dataY="-0.4"   alt="image" systemName="./images/006afe15-5a83-4c11-bb6e-5572e6ecdca8.svg" overlay="#E81818">\
         <div class="borderLayer">\
