@@ -2,9 +2,9 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="t-f39803f7-df02-4169-93eb-7547fb8c961a" class="template growth-both devMobile canvas firer commentable non-processed" alignment="left" name="Template 1" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251-ie.css" /><![endif]-->\
-      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251-ie8.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643908937824.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643908937824-ie.css" /><![endif]-->\
+      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643908937824-ie8.css" /><![endif]-->\
       <div class="freeLayout">\
       </div>\
 \
@@ -15,9 +15,9 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="s-a9b37ec2-b5dc-4d18-9dee-7aeb45484e52" class="screen growth-vertical devMobile canvas PORTRAIT firer ie-background commentable non-processed" alignment="left" name="Bingo - Complete With Card" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/screens/a9b37ec2-b5dc-4d18-9dee-7aeb45484e52-1643748110251.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/a9b37ec2-b5dc-4d18-9dee-7aeb45484e52-1643748110251-ie.css" /><![endif]-->\
-      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/a9b37ec2-b5dc-4d18-9dee-7aeb45484e52-1643748110251-ie8.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/screens/a9b37ec2-b5dc-4d18-9dee-7aeb45484e52-1643908937824.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/a9b37ec2-b5dc-4d18-9dee-7aeb45484e52-1643908937824-ie.css" /><![endif]-->\
+      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/a9b37ec2-b5dc-4d18-9dee-7aeb45484e52-1643908937824-ie8.css" /><![endif]-->\
       <div class="freeLayout">\
       <div id="s-Image" class="pie image firer ie-background commentable non-processed" customid="Image"   datasizewidth="467.0px" datasizeheight="262.0px" dataX="0.0" dataY="-2.0"   alt="image">\
         <div class="borderLayer">\
@@ -196,7 +196,7 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
           </div>\
         </div>\
       </div>\
-      <div id="s-Paragraph_1" class="pie percentage richtext manualfit firer commentable non-processed-percentage non-processed" customid="BINGO"   datasizewidth="100.0%" datasizeheight="23.9%" dataX="-0.0" dataY="-2.0" >\
+      <div id="s-Paragraph_1" class="pie percentage richtext manualfit firer commentable non-processed-percentage non-processed" customid="BINGO"   datasizewidth="106.1%" datasizeheight="23.9%" dataX="-0.0" dataY="-2.0" >\
         <div class="backgroundLayer">\
           <div class="colorLayer"></div>\
           <div class="imageLayer"></div>\
@@ -917,6 +917,64 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
           </div>\
         </div>\
       </div>\
+\
+      <div id="s-stars" class="group firer ie-background commentable hidden non-processed" customid="stars" datasizewidth="116.0px" datasizeheight="24.0px" >\
+        <div id="s-star-1" class="pie image lockV firer click ie-background commentable non-processed" customid="star-1"   datasizewidth="24.0px" datasizeheight="24.0px" dataX="122.0" dataY="604.0" aspectRatio="1.0"   alt="image" systemName="./images/c6195ee7-f41c-4ecf-be6e-2ccde50ad208.svg" overlay="#252525">\
+          <div class="borderLayer">\
+          	<div class="imageViewport">\
+            	<?xml version="1.0" encoding="UTF-8"?>\
+            	<svg preserveAspectRatio=\'none\' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#252525" jimofill=" " /></svg>\
+\
+            </div>\
+          </div>\
+        </div>\
+\
+\
+        <div id="s-star-1_1" class="pie image lockV firer click ie-background commentable non-processed" customid="star-1_1"   datasizewidth="24.0px" datasizeheight="24.0px" dataX="145.0" dataY="604.0" aspectRatio="1.0"   alt="image" systemName="./images/c68e717f-8307-4cd9-8407-7c1e36d7b3a2.svg" overlay="#252525">\
+          <div class="borderLayer">\
+          	<div class="imageViewport">\
+            	<?xml version="1.0" encoding="UTF-8"?>\
+            	<svg preserveAspectRatio=\'none\' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#252525" jimofill=" " /></svg>\
+\
+            </div>\
+          </div>\
+        </div>\
+\
+\
+        <div id="s-star-1_2" class="pie image lockV firer click ie-background commentable non-processed" customid="star-1_2"   datasizewidth="24.0px" datasizeheight="24.0px" dataX="168.0" dataY="604.0" aspectRatio="1.0"   alt="image" systemName="./images/fe6c19da-6bb5-4329-875e-b1865a8fec34.svg" overlay="#252525">\
+          <div class="borderLayer">\
+          	<div class="imageViewport">\
+            	<?xml version="1.0" encoding="UTF-8"?>\
+            	<svg preserveAspectRatio=\'none\' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#252525" jimofill=" " /></svg>\
+\
+            </div>\
+          </div>\
+        </div>\
+\
+\
+        <div id="s-star-1_3" class="pie image lockV firer click ie-background commentable non-processed" customid="star-1_3"   datasizewidth="24.0px" datasizeheight="24.0px" dataX="191.0" dataY="604.0" aspectRatio="1.0"   alt="image" systemName="./images/0020b43b-468e-46eb-a26d-3d7e2dc8e8be.svg" overlay="#252525">\
+          <div class="borderLayer">\
+          	<div class="imageViewport">\
+            	<?xml version="1.0" encoding="UTF-8"?>\
+            	<svg preserveAspectRatio=\'none\' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#252525" jimofill=" " /></svg>\
+\
+            </div>\
+          </div>\
+        </div>\
+\
+\
+        <div id="s-star-1_4" class="pie image lockV firer click ie-background commentable non-processed" customid="star-1_4"   datasizewidth="24.0px" datasizeheight="24.0px" dataX="214.0" dataY="604.0" aspectRatio="1.0"   alt="image" systemName="./images/bfd4ce35-789b-4c2b-9807-d6ddcb91ac82.svg" overlay="#252525">\
+          <div class="borderLayer">\
+          	<div class="imageViewport">\
+            	<?xml version="1.0" encoding="UTF-8"?>\
+            	<svg preserveAspectRatio=\'none\' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#252525" jimofill=" " /></svg>\
+\
+            </div>\
+          </div>\
+        </div>\
+\
+      </div>\
+\
       </div>\
 \
       </div>\

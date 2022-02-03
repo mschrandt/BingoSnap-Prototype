@@ -2,8 +2,8 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="t-f39803f7-df02-4169-93eb-7547fb8c961a" class="template growth-both devMobile canvas firer commentable non-processed" alignment="left" name="Template 1" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643748110251-ie.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643908937824.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/templates/f39803f7-df02-4169-93eb-7547fb8c961a-1643908937824-ie.css" /><![endif]-->\
       <!--[if lte IE 8]><![endif]-->\
       <div class="freeLayout">\
       </div>\
@@ -15,9 +15,9 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
     <div id="s-04f04d14-bf77-48ed-80b0-7f84fcc58eba" class="screen growth-vertical devMobile canvas PORTRAIT firer ie-background commentable non-processed" alignment="left" name="New card" width="360" height="640">\
     <div id="backgroundBox"><div class="colorLayer"></div><div class="imageLayer"></div></div>\
     <div id="alignmentBox">\
-      <link type="text/css" rel="stylesheet" href="./resources/screens/04f04d14-bf77-48ed-80b0-7f84fcc58eba-1643748110251.css" />\
-      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/04f04d14-bf77-48ed-80b0-7f84fcc58eba-1643748110251-ie.css" /><![endif]-->\
-      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/04f04d14-bf77-48ed-80b0-7f84fcc58eba-1643748110251-ie8.css" /><![endif]-->\
+      <link type="text/css" rel="stylesheet" href="./resources/screens/04f04d14-bf77-48ed-80b0-7f84fcc58eba-1643908937824.css" />\
+      <!--[if IE]><link type="text/css" rel="stylesheet" href="./resources/screens/04f04d14-bf77-48ed-80b0-7f84fcc58eba-1643908937824-ie.css" /><![endif]-->\
+      <!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="./resources/screens/04f04d14-bf77-48ed-80b0-7f84fcc58eba-1643908937824-ie8.css" /><![endif]-->\
       <div class="freeLayout">\
       <div id="s-Image" class="pie image firer ie-background commentable non-processed" customid="Image"   datasizewidth="467.0px" datasizeheight="262.0px" dataX="-0.0" dataY="-2.0"   alt="image">\
         <div class="borderLayer">\
@@ -151,7 +151,7 @@ var content='<div class="ui-page" deviceName="androidphone" deviceType="mobile" 
           </div>\
         </div>\
       </div>\
-      <div id="s-Paragraph_1" class="pie percentage richtext manualfit firer commentable non-processed-percentage non-processed" customid="BINGO"   datasizewidth="100.0%" datasizeheight="23.9%" dataX="-0.0" dataY="-2.0" >\
+      <div id="s-Paragraph_1" class="pie percentage richtext manualfit firer commentable non-processed-percentage non-processed" customid="BINGO"   datasizewidth="106.1%" datasizeheight="23.9%" dataX="-0.0" dataY="-2.0" >\
         <div class="backgroundLayer">\
           <div class="colorLayer"></div>\
           <div class="imageLayer"></div>\

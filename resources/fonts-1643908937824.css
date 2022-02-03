@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Roboto-Light.ttf")  format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Roboto-Medium.ttf")  format("truetype");
+}
+@font-face {
+  font-family: "Segoe Script";
+  src: url("") format("embedded-opentype"),
+       url("../fonts/Segoe_Script-Regular.ttf")  format("truetype"),
+       url("../fonts/Segoe_Script-Regular.otf") format("opentype");
+}
